@@ -1,21 +1,9 @@
-function EndScreen({ stars, restartGame }) {
-
+function EndScreen({ stars }) {
   return (
     <div className="screen">
-
       <h1>Great Job!</h1>
-
-      <h2>
-        Stars Earned: ⭐ {stars}
-      </h2>
-
-      <button
-        className="main-button"
-        onClick={restartGame}
-      >
-        Play Again
-      </button>
-
+      <h2>Stars Earned: ⭐ {stars}</h2>
+      <p>Thanks for playing!</p>
     </div>
   );
 }

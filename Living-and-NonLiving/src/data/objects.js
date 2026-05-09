@@ -1,133 +1,133 @@
-export const objects = [
+import TreeImg from "../assets/Tree.png";
+import BirdImg from "../assets/Bird.png";
+import BenchImg from "../assets/Bench.png";
+import BoyImg from "../assets/Boy.png";
+import GirlImg from "../assets/GirlwithDog.png";
+// import DogImg from "../assets/Dog.png";
+import GazeboImg from "../assets/Gazebo.png";
+import LampPostImg from "../assets/LampPost.png";
+import DuckImg from "../assets/Duck.png";
+import TrashCanImg from "../assets/TrashCan.png";
+import SquirrelImg from "../assets/Squirrel.png";
+import RockImg from "../assets/Rock.png";
+import FlowerImg from "../assets/Flower.png";
 
+export const objects = [
   {
     id: 1,
     name: "Tree",
     type: "living",
-    image: "/assets/Tree.png",
+    image: TreeImg,
     x: "0%",
     y: "5%",
-    width: "260px",
+    width: "220px",
   },
-
   {
     id: 2,
     name: "Bird",
     type: "living",
-    image: "/assets/Bird.png",
-    x: "45%",
-    y: "8%",
-    width: "90px",
+    image: BirdImg,
+    x: "42%",
+    y: "3%",
+    width: "80px",
   },
-
   {
     id: 3,
     name: "Bench",
     type: "non-living",
-    image: "/assets/Bench.png",
-    x: "0%",
-    y: "48%",
-    width: "180px",
+    image: BenchImg,
+    x: "2%",
+    y: "44%",
+    width: "160px",
   },
-
   {
     id: 4,
     name: "Boy",
     type: "living",
-    image: "/assets/Boy.png",
-    x: "18%",
-    y: "40%",
-    width: "130px",
+    image: BoyImg,
+    x: "20%",
+    y: "32%",
+    width: "140px",
   },
-
   {
     id: 5,
     name: "Girl",
     type: "living",
-    image: "/assets/GirlwithDog.png",
-    x: "35%",
-    y: "40%",
-    width: "260px",
+    image: GirlImg,
+    x: "36%",
+    y: "30%",
+    width: "150px",
   },
-
-  {
-    id: 6,
-    name: "Dog",
-    type: "living",
-    image: "/assets/Dog.png",
-    x: "52%",
-    y: "58%",
-    width: "130px",
-  },
-
+  // {
+  //   id: 6,
+  //   name: "Dog",
+  //   type: "living",
+  //   image: DogImg,
+  //   x: "46%",
+  //   y: "48%",
+  //   width: "140px",
+  // },
   {
     id: 7,
     name: "Gazebo",
     type: "non-living",
-    image: "/assets/Gazebo.png",
-    x: "58%",
-    y: "22%",
-    width: "240px",
+    image: GazeboImg,
+    x: "53%",
+    y: "15%",
+    width: "220px",
   },
-
   {
     id: 8,
     name: "Lamp Post",
     type: "non-living",
-    image: "/assets/LampPost.png",
-    x: "80%",
-    y: "0%",
-    width: "120px",
+    image: LampPostImg,
+    x: "78%",
+    y: "2%",
+    width: "100px",
   },
-
   {
     id: 9,
     name: "Duck",
     type: "living",
-    image: "/assets/Duck.png",
-    x: "88%",
-    y: "52%",
-    width: "110px",
+    image: DuckImg,
+    x: "83%",
+    y: "48%",
+    width: "100px",
   },
-
   {
     id: 10,
     name: "Trash Can",
     type: "non-living",
-    image: "/assets/TrashCan.png",
-    x: "78%",
-    y: "62%",
-    width: "120px",
+    image: TrashCanImg,
+    x: "76%",
+    y: "52%",
+    width: "90px",
   },
-
   {
     id: 11,
     name: "Squirrel",
     type: "living",
-    image: "/assets/Squirrel.png",
-    x: "0%",
-    y: "72%",
-    width: "120px",
+    image: SquirrelImg,
+    x: "3%",
+    y: "68%",
+    width: "100px",
   },
-
   {
     id: 12,
     name: "Rock",
     type: "non-living",
-    image: "/assets/Rock.png",
+    image: RockImg,
     x: "22%",
-    y: "80%",
-    width: "120px",
+    y: "72%",
+    width: "110px",
   },
-
-  // {
-  //   id: 13,
-  //   name: "Flower",
-  //   type: "living",
-  //   image: "/assets/Flower.png",
-  //   x: "62%",
-  //   y: "78%",
-  //   width: "150px",
-  // },
-
+  {
+    id: 13,
+    name: "Flower",
+    type: "living",
+    image: FlowerImg,
+    x: "52%",
+    y: "70%",
+    width: "130px",
+  },
 ];
