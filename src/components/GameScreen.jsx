@@ -8,12 +8,17 @@ function GameScreen({
   endGame
 }) {
 
-  const [clickedObjects, setClickedObjects] =
-    useState([]);
+  const [clickedObjects, setClickedObjects] = useState([]);
+  const [showInstructions,setShowInstructions] = useState(true);
+  const correctSound =
+  new Audio(
+    "/audio/correct.mp3"
+  );
 
-  const [showInstructions,
-    setShowInstructions] =
-    useState(true);
+const wrongSound =
+  new Audio(
+    "/audio/wrong.mp3"
+  );
 
   function handleObjectClick(object) {
 
@@ -27,7 +32,16 @@ function GameScreen({
   ]);
 
   if (object.type === "living") {
+
+    correctSound.currentTime = 0;
+    correctSound.play();
+
     setStars(prev => prev + 1);
+
+  } else {
+
+    wrongSound.currentTime = 0;
+    wrongSound.play();
   }
 
   const livingClicked =
@@ -43,16 +57,16 @@ function GameScreen({
       ? 1
       : 0);
 
-  setTimeout(() => {
-    if (livingClicked >= 5) {
+  if (livingClicked >= 5) {
+
+    setTimeout(() => {
       endGame();
-    }
-  }, 500);
+    }, 600);
+  }
+
 }
   return (
     <div className="game-screen">
-
-      {/* Instruction Popup */}
       {showInstructions && (
         <div className="instruction-overlay">
 
