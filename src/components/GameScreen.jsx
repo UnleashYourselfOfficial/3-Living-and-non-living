@@ -85,12 +85,6 @@ const wrongSound =
             <p>
              Do not choose non-living things.
             </p>
-
-            <p>
-              Find 5 living things
-              to win!
-            </p>
-
             <button
               className="instruction-button"
               onClick={() =>

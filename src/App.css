@@ -31,7 +31,7 @@
 .screen {
   width: 100%;
   height: 100%;
-  background-image: url("assets/Sample.png");
+  background-image: url("assets/image(1).png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -165,7 +165,9 @@
   background-image: url("assets/image(1).png");
   background-size: cover;
   position: relative;
+  font-size: 36px;
 }
+
 
 /* ── TOP BAR ── */
 .top-bar {
@@ -421,7 +423,7 @@
   border-radius: 38px;
   padding: 34px 32px 28px;
   size: 44px;
-  font-size: 36PX,;
+  font-size: 36px,;
   text-align: center;
   border: 4px solid #72c83e;
   box-shadow:
@@ -464,7 +466,7 @@
 .instruction-modal p {
   font-family: 'Nunito', sans-serif;
   color: #365c14;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 700;
   margin: 8px 0;
   text-shadow: none;
