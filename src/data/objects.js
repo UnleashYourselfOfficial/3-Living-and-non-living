@@ -10,6 +10,7 @@ import TrashCanImg from "../assets/TrashCan.png";
 import SquirrelImg from "../assets/Squirrel.png";
 import RockImg from "../assets/Rock.png";
 import FlowerImg from "../assets/Flower.png";
+import ButterflyImg from "../assets/Butterfly.png";
 
 export const objects = [
   {
@@ -18,7 +19,7 @@ export const objects = [
     type: "living",
     image: TreeImg,
     x: "-15%",
-    y: "-12%",
+    y: "-33%",
     width: "60%",
   },
   {
@@ -26,7 +27,7 @@ export const objects = [
     name: "Bird",
     type: "living",
     image: BirdImg,
-    x: "45%",
+    x: "50%",
     y: "10%",
     width: "10%",
   },
@@ -36,8 +37,8 @@ export const objects = [
     type: "non-living",
     image: BenchImg,
     x: "-7%",
-    y: "63%",
-    width: "30%",
+    y: "64%",
+    width: "28%",
   },
   {
     id: 4,
@@ -53,7 +54,7 @@ export const objects = [
     name: "Girl",
     type: "living",
     image: GirlImg,
-    x: "36%",
+    x: "40%",
     y: "61%",
     width: "18%",
   },
@@ -63,17 +64,17 @@ export const objects = [
     type: "non-living",
     image: GazeboImg,
     x: "54%",
-    y: "35%",
-    width: "30%",
+    y: "18%",
+    width: "29%",
   },
   {
     id: 8,
     name: "Lamp Post",
     type: "non-living",
     image: LampPostImg,
-    x: "60%",
-    y: "26%",
-    width: "22%",
+    x: "42.8%",
+    y: "20%",
+    width: "11%",
   },
   {
     id: 9,
@@ -81,7 +82,7 @@ export const objects = [
     type: "living",
     image: DuckImg,
     x: "82%",
-    y: "80%",
+    y: "70%",
     width: "6%",
   },
   {
@@ -90,7 +91,7 @@ export const objects = [
     type: "non-living",
     image: TrashCanImg,
     x: "80%",
-    y: "65%",
+    y: "48%",
     width: "8%",
   },
   {
@@ -107,17 +108,26 @@ export const objects = [
     name: "Rock",
     type: "non-living",
     image: RockImg,
-    x: "50%",
-    y: "70%",
-    width: "7%",
+    x: "20.4%",
+    y: "55.5%",
+    width: "6%",
   },
   {
     id: 13,
     name: "Flower",
     type: "living",
     image: FlowerImg,
-    x: "57%",
+    x: "74%",
     y: "85%",
-    width: "18%",
+    width: "16%",
   },
+  {
+    id:14,
+    name: "Butterfly",
+    type: "living",
+    image: ButterflyImg,
+    x: "85%",
+    y: "30%",
+    width: "5%",
+  }
 ];

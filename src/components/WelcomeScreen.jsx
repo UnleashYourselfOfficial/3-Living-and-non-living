@@ -10,7 +10,7 @@ function WelcomeScreen({ startGame }) {
         />
       </div>
       <button className="main-button" onClick={startGame}>
-        🚀 Start Adventure
+        Start Adventure
       </button>
 
       <div className="scroll-hint">▼</div>
