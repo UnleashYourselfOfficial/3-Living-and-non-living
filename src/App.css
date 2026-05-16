@@ -26,6 +26,9 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+html {
+  font-size: clamp(12px, 1.2vw, 18px);
+}
 
 /* ─── APP ROOT ─── */
 .app {
@@ -140,7 +143,7 @@
 }
 
 @keyframes logoDrop {
-  from { opacity: 0; transform: scale(0.55) translateY(-50px); }
+  from { opacity: 0; transform: scale(0.65) translateY(-50px); }
   to   { opacity: 1; transform: scale(1)    translateY(0); }
 }
 
@@ -207,13 +210,14 @@
 
 /* GAME SCREEN  */
 .game-screen {
+  position: fixed;
+  inset: 0;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   background-image: url("assets/game-screen-bg.webp");
   background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
+  background-position: center center;
   font-size: clamp(18px, 3vw, 36px);
 }
 
@@ -255,58 +259,59 @@
 .progress-bar-wrapper {
   display: flex;
   align-items: center;
-  gap: clamp(8px, 1.5vw, 14px);
+  gap: 0.6rem;
   background: linear-gradient(135deg, rgba(20,55,12,0.82), rgba(10,35,5,0.65));
   backdrop-filter: blur(10px);
-  padding: clamp(7px, 1.4vh, 12px) clamp(20px, 4vw, 32px);
+  padding: 0.5rem 1.6rem;
   border-radius: 60px;
   border: 2px solid rgba(126,217,87,0.5);
   box-shadow:
     0 4px 20px rgba(0,0,0,0.4),
     0 0 24px rgba(80,200,60,0.25),
     inset 0 1px 0 rgba(255,255,255,0.12);
-  min-width: clamp(230px, 42vw, 520px);
+  width: 26rem;
   position: relative;
+  flex-shrink: 0;
 }
-
+ 
 .progress-bar-wrapper::before {
   content: "🌿";
   position: absolute;
-  left: -14px; top: 50%;
+  left: -0.9rem; top: 50%;
   transform: translateY(-50%);
-  font-size: clamp(14px, 2.5vw, 22px);
+  font-size: 1.1rem;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
-
+ 
 .progress-bar-wrapper::after {
   content: "🌿";
   position: absolute;
-  right: -14px; top: 50%;
+  right: -0.9rem; top: 50%;
   transform: translateY(-50%) scaleX(-1);
-  font-size: clamp(14px, 2.5vw, 22px);
+  font-size: 1.1rem;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
-
+ 
 .progress-label {
   font-family: 'Baloo 2', cursive;
-  font-size: clamp(13px, 2vw, 20px);
+  font-size: 0.9rem;
   font-weight: 800;
   color: #b5f5a0;
   text-shadow: 0 0 10px rgba(126,217,87,0.8), 0 1px 4px rgba(0,0,0,0.7);
   white-space: nowrap;
 }
-
+ 
 .progress-track {
   position: relative;
   flex: 1;
-  height: clamp(16px, 2.6vh, 26px);
+  height: 1.1rem;
   background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 100%);
   border-radius: 60px;
   overflow: visible;
   border: 2px solid rgba(126,217,87,0.35);
   box-shadow: inset 0 3px 8px rgba(0,0,0,0.4);
 }
-
+ 
 .progress-fill {
   height: 100%;
   border-radius: 60px;
@@ -321,8 +326,7 @@
   overflow: hidden;
   min-width: 0;
 }
-
-/* Shimmer sweep */
+ 
 .progress-fill::before {
   content: "";
   position: absolute;
@@ -338,13 +342,12 @@
   background-repeat: no-repeat;
   animation: vineSweep 2s ease-in-out infinite;
 }
-
+ 
 @keyframes vineSweep {
   0%   { background-position: -55% 0; }
   100% { background-position: 160% 0; }
 }
-
-/* Texture lines */
+ 
 .progress-fill::after {
   content: "";
   position: absolute;
@@ -358,14 +361,13 @@
     rgba(0,0,0,0.08) 19px
   );
 }
-
-/* Milestone dots */
+ 
 .progress-dot {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: clamp(10px, 1.8vw, 16px);
-  height: clamp(10px, 1.8vw, 16px);
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   background: rgba(255,255,255,0.25);
   border: 2px solid rgba(255,255,255,0.5);
@@ -375,17 +377,17 @@
     box-shadow 0.35s ease;
   z-index: 2;
 }
-
+ 
 .progress-dot.reached {
   background: #fff;
   border-color: #7ed957;
   box-shadow: 0 0 8px rgba(126,217,87,0.9), 0 0 18px rgba(126,217,87,0.55);
   transform: translate(-50%, -50%) scale(1.35);
 }
-
+ 
 .progress-count {
   font-family: 'Baloo 2', cursive;
-  font-size: clamp(13px, 2vw, 20px);
+  font-size: 0.9rem;
   font-weight: 800;
   color: #ffe97a;
   text-shadow: 0 0 10px rgba(255,220,80,0.7), 0 1px 4px rgba(0,0,0,0.7);

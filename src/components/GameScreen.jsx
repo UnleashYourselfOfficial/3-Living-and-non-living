@@ -46,11 +46,11 @@ function GameScreen({ stars, setStars, endGame }) {
   }
 
   return (
-    <div className="game-screen">
-      {showInstructions && (
-        <div className="instruction-overlay">
-          <img src={InstructionsPopup} alt="Instructions" />
-          <button
+      <div className="game-screen">
+        {showInstructions && (
+          <div className="instruction-overlay">
+            <img src={InstructionsPopup} alt="Instructions" />
+            <button
             className="instruction-button"
             onClick={() => setShowInstructions(false)}
           >
