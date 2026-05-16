@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { objects } from "../data/objects";
 import ObjectButton from "./ObjectButton";
-import InstructionsPopup from "../assets/instructions-popup.png";
+import InstructionsPopup from "../assets/instructions-popup.webp";
 
 const TOTAL_LIVING = 8;
 

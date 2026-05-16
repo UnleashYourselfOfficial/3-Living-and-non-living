@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="app">
       <img
-        src="/Infineo-logo.png"
+        src="/Infineo-logo.webp"
         alt="Infineo Logo"
         className="company-logo"
       />

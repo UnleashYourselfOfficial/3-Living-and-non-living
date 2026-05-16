@@ -1,4 +1,4 @@
-import GreatJob from '../assets/greatjob1.png';
+import GreatJob from '../assets/greatjob1.webp';
 function EndScreen({ stars }) {
   return (
     <div className="screen">

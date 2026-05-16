@@ -4,7 +4,7 @@ function WelcomeScreen({ startGame }) {
 
       <div className="logo-container">
         <img
-          src="/heading.png"
+          src="/heading.webp"
           alt="The Great Living Hunt"
           className="game-logo"
         />
@@ -12,9 +12,6 @@ function WelcomeScreen({ startGame }) {
       <button className="main-button" onClick={startGame}>
         Start Adventure
       </button>
-
-      <div className="scroll-hint">▼</div>
-
     </div>
   );
 }

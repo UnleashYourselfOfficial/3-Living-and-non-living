@@ -1,16 +1,16 @@
-import TreeImg from "../assets/Tree.png";
-import BirdImg from "../assets/Bird.png";
-import BenchImg from "../assets/Bench.png";
-import BoyImg from "../assets/Boy.png";
-import GirlImg from "../assets/GirlwithDog.png";
-import GazeboImg from "../assets/Gazebo.png";
-import LampPostImg from "../assets/LampPost.png";
-import DuckImg from "../assets/Duck.png";
-import TrashCanImg from "../assets/TrashCan.png";
-import SquirrelImg from "../assets/Squirrel.png";
-import RockImg from "../assets/Rock.png";
-import FlowerImg from "../assets/Flower.png";
-import ButterflyImg from "../assets/Butterfly.png";
+import TreeImg from "../assets/Tree.webp";
+import BirdImg from "../assets/Bird.webp";
+import BenchImg from "../assets/Bench.webp";
+import BoyImg from "../assets/Boy.webp";
+import GirlImg from "../assets/GirlwithDog.webp";
+import GazeboImg from "../assets/Gazebo.webp";
+import LampPostImg from "../assets/LampPost.webp";
+import DuckImg from "../assets/Duck.webp";
+import TrashCanImg from "../assets/TrashCan.webp";
+import SquirrelImg from "../assets/Squirrel.webp";
+import RockImg from "../assets/Rock.webp";
+import FlowerImg from "../assets/Flower.webp";
+import ButterflyImg from "../assets/Butterfly.webp";
 
 export const objects = [
   {
@@ -27,7 +27,7 @@ export const objects = [
     name: "Bird",
     type: "living",
     image: BirdImg,
-    x: "50%",
+    x: "77%",
     y: "10%",
     width: "10%",
   },
@@ -72,7 +72,7 @@ export const objects = [
     name: "Lamp Post",
     type: "non-living",
     image: LampPostImg,
-    x: "42.8%",
+    x: "43.8%",
     y: "20%",
     width: "11%",
   },
